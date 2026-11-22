@@ -3,91 +3,154 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service — Dailyra</title>
+<title>Terms of Service | Dailyra</title>
+<meta name="description" content="The terms for using the Dailyra app.">
+<link rel="canonical" href="https://dailyra.co.in/terms-of-service">
+<link rel="icon" href="favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+function logoFallback(img){var s=document.createElement('span');s.className='logo-text'+(img.dataset.light?' light':'');s.textContent='Dailyra';img.replaceWith(s);}
+</script>
 <style>
-:root{--purple:#7F77DD;--purple-dark:#5C54C0;--purple-light:#EEEDFe;--green:#1D9E75;--bg:#F4F1EB;--white:#FFFFFF;--dark:#1A1A2E;--text:#2D2D3A;--muted:#6B6B7E;--border:rgba(127,119,221,0.15)}
+:root{--purple:#6F69E0;--purple-d:#5141A0;--indigo:#322576;--navy:#161F47;--lav:#F4F1FA;--text:#2B2A45;--muted:#66658A;--grad:linear-gradient(135deg,#6F69E0,#5141A0)}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Sora',sans-serif;background:var(--bg);color:var(--text)}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(244,241,235,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
-.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nav-logo-text{font-size:18px;font-weight:700;color:var(--dark)}
-.nav-cta{background:var(--purple);color:white;padding:9px 20px;border-radius:50px;font-size:13px;font-weight:600;text-decoration:none}
-.hero{background:linear-gradient(135deg,#1A1A2E,#2C2C4A);padding:100px 5% 60px;text-align:center}
-.hero-icon{width:64px;height:64px;background:rgba(127,119,221,0.2);border-radius:20px;display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 20px}
-.hero h1{font-size:36px;font-weight:800;color:white;letter-spacing:-1px;margin-bottom:8px}
-.hero p{font-size:14px;color:rgba(255,255,255,0.5)}
-.content{max-width:760px;margin:0 auto;padding:60px 5% 100px}
-.section{background:white;border-radius:20px;padding:32px;margin-bottom:20px;border:1px solid var(--border)}
-.section h2{font-size:18px;font-weight:700;color:var(--dark);margin-bottom:16px;display:flex;align-items:center;gap:10px}
-.section p{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:12px}
-.section p:last-child{margin-bottom:0}
-.section a{color:var(--purple);text-decoration:none}
-.contact-box{background:var(--purple-light);border-radius:14px;padding:20px 24px;margin-top:8px}
-.contact-box p{color:var(--purple);font-weight:500}
-footer{background:var(--dark);padding:32px 5%;text-align:center}
-footer p{font-size:13px;color:rgba(255,255,255,0.4)}
-footer a{color:rgba(255,255,255,0.6);text-decoration:none;margin:0 10px}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--lav);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{color:inherit}
+.blobs{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+.blob.b1{width:520px;height:520px;background:#CFCBF5;top:-120px;left:-120px}
+.blob.b2{width:440px;height:440px;background:#CBEBD8;top:35%;right:-140px}
+.blob.b3{width:480px;height:480px;background:#F6DCC4;bottom:-160px;left:25%}
+.glass{background:rgba(255,255,255,.55);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,.85);border-radius:24px;box-shadow:0 20px 50px rgba(50,37,118,.14)}
+nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);width:min(1120px,calc(100% - 28px));z-index:100;display:flex;align-items:center;justify-content:space-between;padding:10px 12px 10px 20px;border-radius:999px}
+.logo-link{display:flex;align-items:center;text-decoration:none}
+.logo-img{height:42px;width:auto;display:block}
+.logo-text{font-size:20px;font-weight:800;color:var(--indigo);letter-spacing:-.5px}
+.logo-text.light{color:#fff}
+.nav-links{display:flex;gap:26px}
+.nav-links a{font-size:13px;font-weight:600;color:var(--muted);text-decoration:none}
+.nav-links a:hover,.nav-links a.on{color:var(--purple-d)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 20px;border-radius:999px;font:700 13px 'Plus Jakarta Sans',sans-serif;text-decoration:none;background:var(--grad);color:#fff;box-shadow:0 10px 26px rgba(81,65,160,.30)}
+.hero{padding:140px 5% 36px;text-align:center}
+.hero .ico-wrap{margin:0 auto 18px;width:60px;height:60px}
+.hero h1{font-size:clamp(34px,5.5vw,52px);font-weight:800;letter-spacing:-1.6px;color:var(--indigo);line-height:1.1}
+.hero h1 em{font-style:normal;color:var(--purple)}
+.hero p{margin-top:12px;font-size:14px;color:var(--muted);font-weight:500}
+.ico{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ico-wrap{width:48px;height:48px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--c,var(--purple));box-shadow:0 8px 20px rgba(50,37,118,.10);flex-shrink:0}
+.wrap{max-width:780px;margin:0 auto;padding:20px 5% 90px;display:grid;gap:16px}
+.doc{display:flex;gap:18px;padding:26px 28px;align-items:flex-start}
+.doc-body{min-width:0}
+.doc h2{font-size:18px;font-weight:700;color:var(--indigo);letter-spacing:-.3px;margin-bottom:10px}
+.doc p{font-size:14.5px;color:var(--muted);margin-bottom:10px}
+.doc p:last-child{margin-bottom:0}
+.doc a{color:var(--purple-d);font-weight:600}
+.doc ul{margin:0 0 10px 18px;color:var(--muted);font-size:14.5px}
+.contact{background:rgba(255,255,255,.75);border-radius:16px;padding:16px 18px;margin-top:6px;font-size:14px;color:var(--text)}
+.contact b{color:var(--indigo)}
+footer{background:var(--navy);padding:48px 5% 28px}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:32px;max-width:1120px;margin:0 auto 30px}
+.foot p{font-size:13px;color:rgba(255,255,255,.45);margin-top:12px;max-width:260px}
+.foot h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:12px}
+.foot a{display:block;font-size:13px;color:rgba(255,255,255,.45);text-decoration:none;margin-bottom:9px}
+.foot a:hover{color:#fff}
+.legal{max-width:1120px;margin:0 auto;padding-top:22px;border-top:1px solid rgba(255,255,255,.07);font-size:12px;color:rgba(255,255,255,.35);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:820px){.nav-links{display:none}.doc{padding:22px 20px;gap:14px}.hero{padding-top:124px}}
+@media(max-width:480px){.doc{flex-direction:column}}
 </style>
 </head>
 <body>
-<nav>
-  <a href="/" class="nav-logo">
-    <span class="nav-logo-text">Dailyra</span>
-  </a>
-  <a href="https://app.dailyra.co.in" class="nav-cta" target="_blank">Open App →</a>
+<div class="blobs" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+<nav class="glass">
+  <a href="index.html" class="logo-link" aria-label="Dailyra home"><img class="logo-img" src="assets/logo.png" alt="Dailyra" width="130" height="42" onerror="logoFallback(this)"></a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html" class="on">Terms of Service</a>
+  </div>
+  <a class="btn" href="https://app.dailyra.co.in">Open web app</a>
 </nav>
 
-<div class="hero">
-  <div class="hero-icon">📄</div>
-  <h1>Terms of Service</h1>
-  <p>Last updated: April 2026</p>
-</div>
+<header class="hero">
+  <div class="ico-wrap glass" style="--c:#6F69E0"><svg class="ico" viewBox="0 0 24 24" width="26" height="26"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+  <h1>Terms of <em>Service</em></h1>
+  <p>Last updated: November 2026</p>
+</header>
 
-<div class="content">
-  <div class="section">
-    <h2>✅ Acceptance of terms</h2>
-    <p>By using Dailyra you agree to use the app only for lawful personal use. You are responsible for maintaining the security of your account password. You must be at least 13 years old to use Dailyra.</p>
-  </div>
-
-  <div class="section">
-    <h2>⚠️ Disclaimer</h2>
-    <p>Dailyra is provided as-is without warranty. The developer is not responsible for any financial decisions made based on app data. The fitness and diet information provided is for general wellness purposes only and is not a substitute for professional medical advice.</p>
-  </div>
-
-  <div class="section">
-    <h2>💳 Subscriptions & payments</h2>
-    <p>Pro subscription payments are processed securely via Razorpay. Subscriptions auto-renew unless cancelled before the renewal date. Refunds are available within 7 days of purchase by contacting support.</p>
-    <p>Free plan users will see ads powered by Google AdMob. Upgrading to Pro removes all ads.</p>
-  </div>
-
-  <div class="section">
-    <h2>🚫 Prohibited use</h2>
-    <p>You may not use Dailyra to store illegal content, attempt to hack or reverse-engineer the app, or create multiple accounts to abuse the free tier. We reserve the right to suspend accounts that violate these terms.</p>
-  </div>
-
-  <div class="section">
-    <h2>🔄 Changes to terms</h2>
-    <p>We may update these terms from time to time. Continued use of the app after changes constitutes acceptance of the new terms. We will notify users of significant changes via email.</p>
-  </div>
-
-  <div class="section">
-    <h2>📬 Contact us</h2>
-    <div class="contact-box">
-      <p>For any questions: <a href="mailto:support@dailyra.co.in">support@dailyra.co.in</a></p>
-      <p style="margin-top:6px">Developer: Dinesh Choudhary &nbsp;·&nbsp; App: Dailyra Life Manager</p>
+<main class="wrap">
+  <section class="doc glass">
+    <div class="ico-wrap" style="--c:#23AA58"><svg class="ico" viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg></div>
+    <div class="doc-body">
+      <h2>Acceptance of terms</h2>
+      <p>By using Dailyra you agree to use the app only for lawful personal use. You are responsible for maintaining the security of your account password. You must be at least 18 years old to use Dailyra.</p>
     </div>
-  </div>
-</div>
+  </section>
+  <section class="doc glass">
+    <div class="ico-wrap" style="--c:#DC7F15"><svg class="ico" viewBox="0 0 24 24" width="22" height="22"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></div>
+    <div class="doc-body">
+      <h2>Disclaimer</h2>
+      <p>Dailyra is provided as-is without warranty. The developer is not responsible for any financial decisions made based on app data. The fitness and diet information provided is for general wellness purposes only and is not a substitute for professional medical advice.</p>
+    </div>
+  </section>
+  <section class="doc glass">
+    <div class="ico-wrap" style="--c:#6F69E0"><svg class="ico" viewBox="0 0 24 24" width="22" height="22"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+    <div class="doc-body">
+      <h2>Subscriptions and payments</h2>
+      <p>Pro subscription payments are processed securely via Razorpay. Subscriptions auto-renew unless cancelled before the renewal date. Refunds are available within 7 days of purchase by contacting support.</p>
+    </div>
+  </section>
+  <section class="doc glass">
+    <div class="ico-wrap" style="--c:#5141A0"><svg class="ico" viewBox="0 0 24 24" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M4.9 4.9l14.2 14.2"/></svg></div>
+    <div class="doc-body">
+      <h2>Prohibited use</h2>
+      <p>You may not use Dailyra to store illegal content, attempt to hack or reverse-engineer the app, or create multiple accounts to abuse the free tier. We reserve the right to suspend accounts that violate these terms.</p>
+    </div>
+  </section>
+  <section class="doc glass">
+    <div class="ico-wrap" style="--c:#23AA58"><svg class="ico" viewBox="0 0 24 24" width="22" height="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+    <div class="doc-body">
+      <h2>Your account and data</h2>
+      <p>You can delete your account at any time using the <a href="https://app.dailyra.co.in/delete-account">Delete account page</a>. To learn how we handle your data, read our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    </div>
+  </section>
+  <section class="doc glass">
+    <div class="ico-wrap" style="--c:#DC7F15"><svg class="ico" viewBox="0 0 24 24" width="22" height="22"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div>
+    <div class="doc-body">
+      <h2>Changes to terms</h2>
+      <p>We may update these terms from time to time. Continued use of the app after changes constitutes acceptance of the new terms. We will notify users of significant changes via email.</p>
+    </div>
+  </section>
+  <section class="doc glass">
+    <div class="ico-wrap" style="--c:#6F69E0"><svg class="ico" viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+    <div class="doc-body">
+      <h2>Contact us</h2>
+      <p>For any questions about these terms:</p>
+      <div class="contact">
+        <div>Email: <a href="mailto:support@dailyra.co.in">support@dailyra.co.in</a></div>
+        <div style="margin-top:6px"><b>Developer:</b> Dinesh Choudhary &nbsp;·&nbsp; <b>App:</b> Dailyra Life Manager</div>
+      </div>
+    </div>
+  </section>
+</main>
 
 <footer>
-  <p>© 2026 Dailyra. Made in India 🇮🇳</p>
-  <p style="margin-top:10px">
-    <a href="/">Home</a>
-    <a href="/privacy-policy">Privacy Policy</a>
-    <a href="/terms-of-service">Terms of Service</a>
-  </p>
+  <div class="foot">
+    <div>
+      <img class="logo-img" src="assets/logo-white.png" alt="Dailyra" width="124" height="42" data-light="1" onerror="logoFallback(this)">
+      <p>Manage your daily life in one place. Built in India.</p>
+    </div>
+    <div><h4>Product</h4><a href="index.html#features">Features</a><a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a></div>
+    <div><h4>Legal</h4><a href="privacy-policy.html">Privacy Policy</a><a href="terms-of-service.html">Terms of Service</a><a href="https://app.dailyra.co.in/delete-account">Delete account</a></div>
+    <div><h4>Contact</h4><a href="mailto:support@dailyra.co.in">support@dailyra.co.in</a><a href="https://app.dailyra.co.in">Open web app</a></div>
+  </div>
+  <div class="legal">
+    <div>&copy; 2026 Dailyra. Built by Hifly Studio, Mumbai, India.</div>
+    <div>Google Play is a trademark of Google LLC.</div>
+  </div>
 </footer>
 </body>
 </html>
